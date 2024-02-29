@@ -1,0 +1,67 @@
+.card {
+  width: 15vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  background-color: #000000;
+  box-shadow: inset 0 0 15px #000;
+  opacity: 0.7;
+  color: #fff;
+}
+.cardContent {
+  width: 13vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Concert One;
+
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  filter: drop-shadow(0 0 10px #000);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.language {
+  background-color: #312e2e;
+  display: grid;
+  place-content: center;
+  padding: 5px;
+  width: 10%;
+  margin: 5px;
+  align-self: flex-end;
+  border-radius: 5px;
+}
+
+.playTriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-left: 50px solid #690202;
+  border-bottom: 30px solid transparent;
+  opacity: 0;
+  filter: drop-shadow(0 0 5px #000);
+  transform: scale(0.5);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  opacity: 1;
+  color: #fff;
+}
+
+.card:hover .playTriangle {
+  opacity: 1;
+  border-left: 50px solid #ffffff;
+  transform: scale(1);
+}
