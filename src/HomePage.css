@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+}
+.pageSelector {
+  position: sticky;
+  gap: 80px;
+  justify-content: center;
+  font-size: 50px;
+  margin: 50px 25vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pages {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: Josephin Sans;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.pageButton {
+  font-size: 20px;
+}
+
+.nextBut {
+  z-index: 1;
+  position: fixed;
+  top: 48%;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.prevBut {
+  z-index: 1;
+  position: fixed;
+  top: 48%;
+  left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nextBut:hover {
+  transform: scale(1.2);
+}
+.prevBut:hover {
+  transform: scale(1.2);
+}

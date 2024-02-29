@@ -1,0 +1,162 @@
+.bar {
+  background-color: #3d3d3d;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.title {
+  margin-top: 10px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(
+    82.3deg,
+    rgb(155, 47, 131) 10.8%,
+    rgb(130, 121, 255) 94.3%
+  );
+  font-family: Josefin Sans;
+  background-clip: text;
+  font-size: 40px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.barInp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 15%;
+  height: 5vh;
+  border-radius: 5px;
+  background-color: #313131;
+  /* color: rgb(255, 255, 255); */
+  font-size: 20px;
+  font-weight: 900;
+  /* filter: drop-shadow(0 0 10px #000); */
+  overflow: hidden;
+  border-radius: 15px;
+}
+.button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  outline: none;
+}
+.button:active {
+  outline: none;
+}
+.button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+.button:hover:before {
+  background-color: #fff;
+  width: 3rem;
+}
+@keyframes fadeIn {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+.dropdown {
+  position: fixed;
+  z-index: 3;
+  width: 500px;
+  height: 0px;
+  background-color: #1a1a1a;
+  top: 100px;
+  right: 28vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  /* box-shadow: #000000 0px 0px 10px 0px; */
+}
+.dropContent {
+  z-index: 3;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.genre {
+  z-index: 3;
+  display: grid;
+
+  color: #fff;
+  place-content: center;
+  padding: 10px;
+  align-self: flex-end;
+  font-size: 19px;
+  font-family: Concert One;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.genre:hover {
+  background-color: #000000;
+}
+
+.sDropdown {
+  position: fixed;
+  z-index: 3;
+  width: 200px;
+  height: 0px;
+  background-color: #1a1a1a;
+  top: 100px;
+  right: 26vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  /* box-shadow: #000000 0px 0px 10px 0px; */
+}
+.sDropContent {
+  z-index: 3;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.sortOption:hover {
+  background-color: #000000;
+}

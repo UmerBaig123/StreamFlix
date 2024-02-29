@@ -1,0 +1,82 @@
+.full {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  color: white;
+  left: 0;
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.viewer {
+  aspect-ratio: 16/9;
+  height: 55vh;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(
+    82.3deg,
+    rgb(155, 47, 131) 10.8%,
+    rgb(130, 121, 255) 94.3%
+  );
+  font-family: Josefin Sans;
+  background-clip: text;
+  font-size: 40px;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  -webkit-text-fill-color: transparent;
+}
+.topBar {
+  background-color: #3d3d3d;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.barContent {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie {
+  margin-right: 3vw;
+  font-family: Concert One;
+  color: white;
+  font-size: 30px;
+}
+
+.movieGenre {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #3d3d3d;
+}
+.movieContainer {
+  height: 87vh;
+  width: 100%;
+  margin-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.viewerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 65%;
+  width: 100%;
+}
